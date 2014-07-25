@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>Drei Chinesen mit dem Kontrabass</title>
+		<link rel="stylesheet" href="./stylesheets/style.css">
+		<script src="./javascripts/jquery.js"></script>
+		<script src="./javascripts/jquery-ui.js"></script>
+		<script src="./javascripts/dcmdk.js"></script>
+	</head>
+	<body>
+		<h1>Drei Chinesen mit dem Kontrabass</h1>
+		<p>Welcome to Drei Chinesen mit dem Kontrabass</p>
+		<p>
+			This site is based on a children's game where you replace the vowels in a rhyme/song
+			by one vowel and try to sing the rhyme. This site allows you to replace
+			any character (not only vowels) by one or more other characters.
+		</p>
+		<div id="top" class="box">
+			<p>Enter the text to transform into the following field</p>
+			<textarea id="origin" class="input">
+Drei Chinesen mit dem Kontrabass,
+sassen auf der Strasse und erzählten sich was,
+da kam die Polizei, ja was ist denn das?
+drei Chinesen mit dem Kontrabass.
+			</textarea>
+		</div>
+		<br>
+		<div class="box">
+			<p>Choose the letters to replace (Separate multiple letters by comma, only single characters)</p>
+			<textarea id="rep" class="input">i,u,e,o,a,ä</textarea>
+		</div>
+		<br>
+		<div class="box">
+			<p>Choose one or more letters to replace the above letters with. If you choose more than one letter, you will get multiple answers. You can also specify something like 'blub'</p>
+			<br>
+			<br>
+			<input type="text" value="i" id="rap" class="input">
+		</div>
+		<br>
+		<div class="box">
+			<input type="checkbox" name="collapse" id="col" checked>
+			<label for="col">Collapse multiple letters</label>
+			<br>
+			<p>Check this option to remove sequences of the same letter in the generated text.</p>
+			<p>Check this option if you use a multi-letter replacement, unless you want repetitions of the combination</p>
+		</div>
+		<br>
+		<br>
+		<a href="#" id="go" class="unselectable buttona">Go!</a>
+		<a href="#" id="clear" class="unselectable buttona">Clear output!</a>
+		<div id="output" class="output"></div>
+	</body>
+</html>
